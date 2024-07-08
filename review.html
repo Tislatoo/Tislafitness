@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reviews</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <img src="TislaLogo.png" alt="Tisla Fitness">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="review.html">Review</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="join-now">Join Now</a>
+        </header>
+        <section class="reviews-section">
+            <h2>FROM YOU</h2>
+            <div class="reviews-content">
+                <div class="reviewers">
+                    <img src="reviewer1.webp" alt="Reviewer 1">
+                    <img src="reviewer2.jpg" alt="Reviewer 2">
+                    <img src="reviewer3.png" alt="Reviewer 3">
+                    <img src="reviewer4.png" alt="Reviewer 4">
+                </div>
+                <div class="review-cards">
+                    <div class="review-card">
+                        <h3>Name</h3>
+                        <div class="stars">★★★★☆</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="review-card">
+                        <h3>Name</h3>
+                        <div class="stars">★★★☆☆</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="review-controls">
+                    <button class="prev-review">&lt;</button>
+                    <button class="next-review">&gt;</button>
+                </div>
+                <a href="#" class="give-review" id="giveReviewButton">+ Give Review</a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="TislaLogo.png" alt="Tisla Fitness Logo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="footer-menu">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h2>Social Media</h2>
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Github</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Tisla Fitness</p>
+        </div>
+    </footer>
+
+    <!-- Modal for review -->
+    <div id="reviewModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Feedback</h2>
+            <h3>How Are you feeling?</h3>
+            <p>Your input is valuable in helping us better understand your needs and tailor our services accordingly.</p>
+            <div class="emoji-container">
+                <span data-emoji="😖">😖</span>
+                <span data-emoji="😔">😔</span>
+                <span data-emoji="😐">😐</span>
+                <span data-emoji="😊">😊</span>
+                <span data-emoji="😍">😍</span>
+            </div>
+            <input type="hidden" id="selectedEmoji" name="emoji" value="">
+            <textarea id="comment" placeholder="Add a comment..."></textarea>
+            <button class="submit-button" id="submitFeedback">Submit Now</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
